@@ -32,7 +32,13 @@ public class Main {
     }
         return ValueinArray;
     }
-
+    public void Deleteivalue(int index){
+        if(index < arraySize){
+            for(int j = index; j < arraySize; j++){
+                theArray[j] = theArray[j+1];
+            }
+        }
+    }
     public static void main(String[] args){
         Main newArray = new Main();
         newArray.genRandomArray();
